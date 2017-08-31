@@ -3,12 +3,14 @@ package com.spring.service.services;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 import com.spring.service.models.Customer;
 import com.spring.service.repos.CustomerRepository;
 
 @Component
+@Lazy
 public class CustomerService {
 
 	CustomerRepository customerRepository;
